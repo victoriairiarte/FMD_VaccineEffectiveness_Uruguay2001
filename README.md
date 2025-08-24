@@ -36,19 +36,14 @@ README.md # project description
 2. Open R or RStudio in the project folder.
 
 3. Install the required R packages (only the first time):
-# Install required packages if not already installed
 install.packages(c("tidyverse", "broom"))
-
-# Load libraries
 library(dplyr)
 library(tidyr)
 library(broom)
 library(ggplot2)
 
-
 4. Run the pipeline
    source("R/analysis_pipeline.R")
-
 ---
 
 ## 📊 Data
