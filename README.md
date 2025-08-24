@@ -4,15 +4,20 @@ This repository contains the R scripts used for the retrospective assessment of 
 The analysis is based on preparing epidemic data in an SIR framework and estimating the transmission rate parameter (β) using Generalized Linear Models with a complementary log-log link.
 
 ---
-
 ## 📂 Repository structure
-R/ # Scripts used for data preparation, modelling and figures
-│ ├── 01_data_prep.R
-│ ├── 02_glm_model.R
-│ └── 03_figures.R
+
+R/ # R scripts
+│ └── analysis_pipeline.R # runs data preparation, GLM fitting and figures
 
 data/ # Example/simulated dataset
-│ └── README.md # Explains access to real data
+│ ├── simulated_fmd_dataset.csv
+│ └── README.md # explains access to the real dataset
+
+results/ # Optional: outputs and figures (not tracked by default)
+
+README.md # project description
+LICENSE # license file
+.gitignore # files ignored by Git
 
 ---
 
@@ -23,10 +28,20 @@ data/ # Example/simulated dataset
 ---
 
 ## ▶️ How to run
-1. Clone or download this repository.  
-2. Run `R/01_data_prep.R` to prepare the dataset.  
-3. Run `R/02_glm_model.R` to fit the GLM and estimate β.  
-4. Run `R/03_figures.R` to reproduce the main figures from the manuscript.  
+## ▶️ How to run
+
+1. **Download or clone this repository**:
+   ```bash
+   git clone https://github.com/victoriairiarte/FMD_VaccineEffectiveness_Uruguay2001.git
+   cd FMD_VaccineEffectiveness_Uruguay2001
+
+2. Open R or RStudio in the project folder.
+
+3. Install the required R packages (only the first time):
+   install.packages(c("dplyr", "lubridate", "tidyverse", "broom", "lme4"))
+
+4. Run the pipeline
+   source("R/analysis_pipeline.R")
 
 ---
 
