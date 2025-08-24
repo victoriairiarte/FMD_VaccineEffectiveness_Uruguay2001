@@ -11,13 +11,12 @@ R/ # R scripts
 
 data/ # Example/simulated dataset
 │ ├── simulated_fmd_dataset.csv
-│ └── README.md # explains access to the real dataset
 
-results/ # Optional: outputs and figures (not tracked by default)
+.gitignore # files ignored by Git
+
+LICENSE # license file
 
 README.md # project description
-LICENSE # license file
-.gitignore # files ignored by Git
 
 ---
 
@@ -27,7 +26,6 @@ LICENSE # license file
 
 ---
 
-## ▶️ How to run
 ## ▶️ How to run
 
 1. **Download or clone this repository**:
@@ -53,7 +51,7 @@ Instructions for requesting access to the real data are provided in `data/README
 ---
 
 ## 📖 Citation
-If you use this code, please cite:  
+If you use this code, please cite (subject to journal acceptance):   
 
 Iriarte, M.V. et al. (2025). *Retrospective assessment of foot-and-mouth disease vaccination effectiveness in Uruguay during the 2001 epidemic*. npj Vaccines. DOI: [to be added]  
 
